@@ -5,6 +5,7 @@ public class ChartExample extends JFrame
 {
     public ChartExample()
     {
+        super("Pie Chart Example");
         Container c = getContentPane();
         c.setBackground(Color.WHITE);
         PieChart chart = new PieChart(30, 50, 100);
@@ -17,7 +18,7 @@ public class ChartExample extends JFrame
     public static void main()
     {
         ChartExample w = new ChartExample();
-        w.setBounds(300, 300, 500, 330);
+        w.setBounds(300, 300, 600, 330);
         w.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         w.setVisible(true);
     }
