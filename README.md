@@ -1,7 +1,7 @@
 # java-piechart
 A lightweight, extensible pie chart class designed for simple use.
 
-![Pie Chart in action](https://github.com/archfan7411/java-piechart/blob/master/PieChart.png)
+![Pie Chart in action](https://github.com/archfan7411/java-piechart/blob/master/piechart.png)
 
 # How to use
 See the example file for a complete example.
