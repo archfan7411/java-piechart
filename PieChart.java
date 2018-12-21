@@ -127,7 +127,19 @@ public class PieChart extends JPanel
     
     public void paintComponent(Graphics g)
     {
+        
         super.paintComponent(g);
+        paintComponent((Graphics2D)g);
+    }
+    
+    public void paintComponent(Graphics2D g)
+    {
+        /*Antialiasing/"Smoother Borders"*/
+        RenderingHints r=new RenderingHints(RenderingHints.KEY_ANTIALIASING,RenderingHints.VALUE_ANTIALIAS_ON);
+        g.addRenderingHints(r);
+        /*Text Antialiasing*/
+        RenderingHints r=new RenderingHints(RenderingHints.KEY_TEXT_ANTIALIASING,RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
+        g.addRenderingHints(r);
         
         double currentDegree = 0;
         
